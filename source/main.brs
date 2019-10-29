@@ -5,7 +5,7 @@ end function
 
 sub Init()
     print readText("client.txt")
-    if m.oa = invalid then m.oa = InitOauth("6a35d7f57ab8c214692a2a734acbe07ee62a33f4ebeacf1f","d3688f9f7dc2d31d0379eeb911fc29752f22fa549f8f936adcbb05ddd29956cf")
+    if m.oa = invalid then m.oa = InitOauth(client_id, client_secret)
     if m.mixu = invalid then m.mixu = InitMixu()
 end sub
 
