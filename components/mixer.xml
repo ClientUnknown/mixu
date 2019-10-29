@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="mixer" extends="Scene">
+<script  type="text/brightscript" uri="pkg:/components/mixer.brs"/>
+    <children>
+        
+        <Rectangle
+            id="background"
+            color="#5a5aff"
+            width="1920"
+            height="1080"
+            />
+
+        <category_screen
+            id="category_screen"
+            visible="true"
+            translation="[0,0]"
+            />
+        <content_screen
+            id="content_screen"
+            visible="false"
+            translation="[0,0]"
+            />
+        <reg_screen
+            id="reg_screen"
+            visible="false"
+            translation="[0,0]"
+            />
+
+    </children>
+</component>

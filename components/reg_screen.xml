@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component name="reg_screen" extends="Group">
+<script type="text/brightscript" uri="pkg:/components/reg_screen.brs"/>
+<script type="text/brightscript" uri="pkg:/source/regScreen.brs"/>
+<script type="text/brightscript" uri="pkg:/source/util.brs"/>
+<script type="text/brightscript" uri="pkg:/source/dlg.brs"/>
+<script type="text/brightscript" uri="pkg:/source/oauth.brs"/>
+    <children>
+        <RegistryTask
+            id="RegistryTask"
+            />
+
+        <Rectangle
+            id="reg_bg"
+            opacity=".4"
+            color="#000000"
+            width="1200"
+            height="760"
+            translation="[375,200]"
+            />
+        
+        <Label
+            id="how_to"
+            font="font:MediumargeBoldSystemFont"
+            height="1000"
+            width="1000"
+            wrap="true"
+            text="Go to 'https://mixer.com/go' and enter the following code:"
+            translation="[500,470]"
+            />
+
+        <Label 
+            id="token"
+            font="font:LargeBoldSystemFont"
+            horizAlign="center"
+            width="1150"
+            text=""
+            translation="[400,650]"
+            />
+
+        <Button
+            id="button"
+            text="Generate A New Code"
+            textFont="font:LargeBoldSystemFont"
+            focusedTextFont="font:LargeBoldSystemFont"
+            translation="[645,780]"
+            />
+
+        <Timer
+            id="register_timer"
+            duration=""
+            />
+    </children>
+    <interface>
+        <field id="token" type="node" onChange="on_update_token"/>
+    </interface>
+</component>
