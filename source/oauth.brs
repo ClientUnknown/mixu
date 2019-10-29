@@ -9,8 +9,8 @@ function InitOauth(clientId as string, clientSecret as string, port=invalid as d
     this.token_prefix            = "https://mixer.com/api/v1/oauth/token"
     this.short_prefix            = "https://mixer.com/api/v1/oauth/shortcode"
 
-    this.clientId                = "6a35d7f57ab8c214692a2a734acbe07ee62a33f4ebeacf1f"
-    this.clientSecret            = "d3688f9f7dc2d31d0379eeb911fc29752f22fa549f8f936adcbb05ddd29956cf"
+    this.clientId                = clientId
+    this.clientSecret            = clientSecret
 
     this.RequestUserCode         = oauth_request_user_code
     this.PollForTokens           = oauth_poll_for_tokens
